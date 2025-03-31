@@ -7,9 +7,9 @@ N'hésitez pas à ajouter ou corriger des conseils.
 
 
 
-Trois packages sont necessaire
+Deux packages sont necessaire
 ```bash
-sudo apt install fortune cowsay strfile
+sudo apt install fortune-mod cowsay 
 ```
 
 ```bash
