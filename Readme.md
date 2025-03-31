@@ -16,11 +16,11 @@ sudo apt install fortune-mod cowsay
 ./install.sh
 ```
 be sure to source your .profile from your shell conf : 
-zsh : 
+- zsh : 
 ```bash
 echo "source ~/.profile" >> .zshrc;
 ```
-bash : 
+- bash : 
 ```bash
 echo "source ~/.profile" >> .bashrc;
 ```
