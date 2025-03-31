@@ -1,0 +1,102 @@
+Utilisez '!!' pour réexécuter la dernière commande.
+%
+Appuyez sur 'Ctrl + r' pour rechercher une commande dans l'historique.
+%
+Utilisez 'cd -' pour revenir au répertoire précédent.
+%
+Tapez 'history' pour voir toutes les commandes récentes.
+%
+Utilisez 'alias' pour créer des raccourcis de commandes fréquemment utilisées. Tu peux aussi afficher les alias defini avec.
+%
+Ajoutez 'set -o vi' ou 'set -o emacs' à votre .bashrc pour modifier les commandes comme un éditeur.
+%
+Appuyez sur 'Ctrl + a' pour aller au début de la ligne de commande.
+%
+Appuyez sur 'Ctrl + e' pour aller à la fin de la ligne de commande.
+%
+Utilisez 'pushd' et 'popd' pour naviguer entre plusieurs répertoires.
+%
+'ctrl + u' supprime toute la ligne avant le curseur dans le terminal.
+%
+Utilisez '!!:gs/old/new' pour remplacer 'old' par 'new' dans la dernière commande exécutée.
+%
+Ajoutez des fonctions personnalisées dans votre fichier ~/.bashrc pour automatiser des tâches répétitives.
+%
+Utilisez 'shopt -s autocd' pour activer l'autocd dans Bash (change automatiquement de répertoire en tapant simplement le nom).
+%
+Avec '$(command)', la sortie d'une commande est substituée dans une autre commande.
+%
+Utilisez 'nohup' pour exécuter une commande qui persiste même après la fermeture du terminal.
+%
+Pour interrompre un processus en cours dans le terminal, appuyez sur 'Ctrl + c'.
+%
+Appuyez sur 'Ctrl + z' pour suspendre une tâche et utilisez 'fg' pour la ramener au premier plan.
+%
+Redirigez la sortie d'une commande vers un fichier avec 'command > fichier.txt'.
+%
+Ajoutez '> /dev/null 2>&1' à la fin d'une commande pour ignorer toute sortie (erreurs incluses).
+%
+Utilisez 'watch' pour exécuter une commande à intervalle régulier, par exemple 'watch -n 5 df -h'.
+%
+'find . -type f -name "*.txt"' recherche tous les fichiers .txt dans le répertoire courant et sous-répertoires.
+%
+'grep -r "pattern" .' cherche un motif dans tous les fichiers du répertoire courant de manière récursive.
+%
+'less' est plus pratique que 'cat' pour lire de longs fichiers, car il permet de défiler.
+%
+Utilisez 'xargs' pour passer la sortie d'une commande en tant qu'arguments d'une autre commande.
+%
+Avec 'tee', vous pouvez rediriger la sortie d'une commande vers un fichier et l'afficher en même temps dans le terminal.
+%
+Utilisez 'df -h' pour voir l'espace disque disponible avec des tailles humaines lisibles.
+%
+'sed' est utilisé pour manipuler des chaînes de texte, par exemple 'sed 's/old/new/g' file.txt'.
+%
+Utilisez 'tr' pour transformer des caractères, par exemple 'echo hello | tr a-z A-Z' pour convertir en majuscules.
+%
+Les variables d'environnement sont définies avec 'export VARIABLE="valeur"' et sont disponibles pour les processus enfants.
+%
+Utilisez 'diff' pour comparer le contenu de deux fichiers texte.
+%
+Utilisez 'wget' pour télécharger un fichier à partir d'une URL : 'wget http://example.com/file.zip'.
+%
+Pour compresser un fichier, utilisez 'tar -czvf archive.tar.gz file'.
+%
+Avec 'kill', vous pouvez arrêter un processus en utilisant son PID : 'kill -9 PID'.
+%
+Utilisez 'top' pour voir les processus les plus gourmands en ressources système en temps réel.
+%
+'scp' est utilisé pour copier des fichiers d'un hôte distant : 'scp fichier utilisateur@serveur:/chemin'.
+%
+Utilisez 'rsync' pour synchroniser des fichiers entre deux répertoires ou machines, avec de nombreuses options.
+%
+Ajoutez '2>/dev/null' à la fin d'une commande pour ignorer les erreurs sans ignorer la sortie standard.
+%
+Utilisez 'chmod' pour changer les permissions d'un fichier : 'chmod +x script.sh' pour rendre un fichier exécutable.
+%
+La commande 'chown' permet de changer le propriétaire d'un fichier : 'chown utilisateur fichier'.
+%
+Utilisez 'man' pour accéder à la documentation d'une commande : 'man ls' affiche le manuel de 'ls'.
+%
+Avec 'uname -a', vous pouvez obtenir des informations détaillées sur le système d'exploitation.
+%
+Pour démarrer un script automatiquement à chaque nouvelle session, ajoutez-le à votre fichier .bashrc ou .profile.
+%
+Utilisez 'cut' pour extraire des colonnes spécifiques d'un fichier texte : 'cut -d "," -f 1,3 file.csv'.
+%
+La commande 'uniq' élimine les lignes répétées dans un fichier trié.
+%
+Utilisez 'sort' pour trier un fichier texte par ligne : 'sort file.txt'.
+%
+Avec 'paste', vous pouvez fusionner des fichiers ligne par ligne : 'paste file1.txt file2.txt'.
+%
+Pour changer de répertoire de manière permanente dans un script Bash, utilisez 'cd' dans un sous-shell.
+%
+Avec 'basename', vous pouvez extraire le nom d'un fichier sans son chemin : 'basename /chemin/fichier.txt'.
+%
+'utilisez 'dirname' pour obtenir le répertoire parent d'un fichier : 'dirname /chemin/fichier.txt'.
+%
+La commande 'eval' permet d'exécuter une chaîne en tant que commande Bash.
+%
+Ajoutez des couleurs à votre terminal en utilisant des séquences d'échappement ANSI.
+%
