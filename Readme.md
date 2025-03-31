@@ -1,10 +1,9 @@
 # Les Formidables Conseils du Terminal / Awesome Term Tips 
 
-## Voici une petite colection de conseils dans le terminal.
+## Voici une petite collection de conseils pour le terminal.
 
-Fortune est appelé a chaque ouverture d'un nouveau terminal et affiche un petit conseil tout cela decoré avec cowsay, rien de bien fou. 
-N'hesitez pas à ajouter/corriger des conseils. 
-
+`fortune` est appelé à chaque ouverture d'un nouveau terminal et affiche un petit conseil, le tout décoré avec `cowsay`. Rien de bien fou.
+N'hésitez pas à ajouter ou corriger des conseils.
 
 
 
@@ -16,5 +15,6 @@ sudo apt install fortune cowsay strfile
 ```bash
 ./install.sh
 ```
+![alt text](images/image.png)
 
 
