@@ -100,3 +100,7 @@ La commande 'eval' permet d'exécuter une chaîne en tant que commande Bash.
 %
 Ajoutez des couleurs à votre terminal en utilisant des séquences d'échappement ANSI.
 %
+uv est un gestionnaire de paquets Python, au même titre que pip, mais plus récent. Il permet de générer un environnement à partir d'une description, comme un fichier pyproject.toml, qui remplace requirements.txt.
+pour en savoir plus: https://docs.astral.sh/uv/getting-started/
+%
+Pour installer un programme avec pip pour son ordinateur il est plus propre d'utiliser pipx qui n'affecte pas la version de python essentielle a l'OS Avec pipx, chaque programme fonctionne dans son propre environnement Python.
