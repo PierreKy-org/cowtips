@@ -8,9 +8,9 @@ N'hésitez pas à ajouter ou corriger des conseils.
 
 ## Installation
 
-Deux packages sont necessaire
+Trois packages sont necessaire
 ```bash
-sudo apt install fortune-mod cowsay 
+sudo apt install fortune-mod cowsay jq 
 ```
 
 ```bash
