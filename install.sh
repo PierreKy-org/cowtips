@@ -63,11 +63,13 @@ if [[ ! " ${technologies[@]} " =~ " $2 " ]]; then
     exit 1
 fi
 
+
 command="~/.term_tips/cowtips.sh $1 $2;"
 
 if ! grep -q "cowtips.sh"  ~/.profile ; then
     echo $command >> ~/.profile ;
     echo "alias cowtips='~/.term_tips/cowtips.sh'" >> ~/.profile;
+    echo $1 $2 > ~/.term_tips/config;
     
     cowsay "Bash tips and tricks collection installed :)";
 else

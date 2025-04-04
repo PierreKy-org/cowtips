@@ -25,24 +25,38 @@ tag= eval "curl -s $git| jq -r '.tag_name' " > /tmp/cowtag
 if ! diff /tmp/cowtag ~/.term_tips/version > /dev/null; then
     # echo "New version of cowtips available"
     updatable=1;
+    version=$(cat /tmp/cowtag)
     else 
     updatable=0;
 fi
 fi
 
 if [ "$updatable" -eq 1 ]; then
-    read -p "A new version of cowtips is available! Do you want to update? [Y/n] " response
+    read -p "A new version ($version) of cowtips is available! Do you want to update? [Y/n] " response
     if [[ "$response" =~ ^[Yy]$ || -z "$response" ]]; then
         echo "Updating cowtips..."
+        # remove old version
+        config=$(cat ~/.term_tips/config);
+        ~/.term_tips/uninstall.sh >> /dev/null;
 
-        echo "nothing is implemented yet you can go to the github page to get the last version..." 
-        # TODO work on the update
-            # curl -sL https://github.com/MonsieurCo/Formidable-Conseils-du-Terminal/archive/refs/tags/$(cat /tmp/cowtag).tar.gz -o /tmp/cowtips_update.tar.gz
-            # tar -xzf /tmp/cowtips_update.tar.gz -C ~/.term_tips --strip-components=1
-            # echo "$(cat /tmp/cowtag)" > ~/.term_tips/version
+        # download the new version B-)
+        curl -sL https://github.com/MonsieurCo/Formidable-Conseils-du-Terminal/archive/refs/tags/$version.tar.gz -o /tmp/cowtips_update.tar.gz
+        # unpack the new version
+        # check if the directory exists
+        if [ -d /tmp/cowtips_update_dir ]; then
+            rm -rf /tmp/cowtips_update_dir
+        fi
+        mkdir -p /tmp/cowtips_update_dir
+        tar -xzf /tmp/cowtips_update.tar.gz -C /tmp/cowtips_update_dir 
+        
+        cd "/tmp/cowtips_update_dir/Formidable-Conseils-du-Terminal-$version/"
+        eval "/tmp/cowtips_update_dir/Formidable-Conseils-du-Terminal-$version/install.sh $config" >> /dev/null;
+        
+        rm /tmp/cowtips_update.tar.gz
 
-            
-        echo "Update completed."
+        cowsay "Update completed."
+        source ~/.profile
+        exit 0;
     else
         echo "Update skipped."
     fi
