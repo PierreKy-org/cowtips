@@ -104,3 +104,25 @@ uv est un gestionnaire de paquets Python, au même titre que pip, mais plus réc
 pour en savoir plus: https://docs.astral.sh/uv/getting-started/
 %
 Pour installer un programme avec pip pour son ordinateur il est plus propre d'utiliser pipx qui n'affecte pas la version de python essentielle a l'OS Avec pipx, chaque programme fonctionne dans son propre environnement Python.
+
+Utilisez 'history -c' pour effacer votre historique de commandes.
+%
+Utilisez '!! | tee output.txt' pour sauvegarder la sortie de votre dernière commande dans un fichier.
+%
+Utilisez 'ps aux | grep process' pour trouver les processus en cours par nom.
+%
+Utilisez 'head -n 10 fichier.txt' pour afficher les 10 premières lignes d’un fichier.
+%
+Utilisez 'tail -f logfile' pour suivre en temps réel les nouvelles lignes ajoutées à un fichier de log.
+%
+Utilisez 'uptime' pour voir depuis combien de temps votre système fonctionne.
+%
+Utilisez 'df -Th' pour afficher l’espace disque utilisé avec les types de systèmes de fichiers.
+%
+Utilisez 'du -sh *' pour voir la taille de chaque élément du répertoire courant.
+%
+Utilisez 'crontab -e' pour éditer vos tâches planifiées (cron jobs).
+%
+Utilisez 'ssh utilisateur@hôte' pour se connecter à une machine distante de façon sécurisée.
+
+Utilisez 'sudo netstat -tnlp | grep <PORT_NUMBER>' pour savoir quel processus écoute sur un port spécifique. C'est utile pour diagnostiquer des problèmes réseau ou vérifier quel service utilise un port.

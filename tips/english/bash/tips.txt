@@ -1,1 +1,128 @@
-to translate...
+Use '!!' to re-execute the last command.
+%
+Press 'Ctrl + r' to search your command history.
+%
+Use 'cd -' to return to the previous directory.
+%
+Type 'history' to see all recent commands.
+%
+Use 'alias' to create shortcuts for frequently used commands. You can also display defined aliases with it.
+%
+Add 'set -o vi' or 'set -o emacs' to your .bashrc to edit commands like in an editor.
+%
+Press 'Ctrl + a' to go to the beginning of the command line.
+%
+Press 'Ctrl + e' to go to the end of the command line.
+%
+Use 'pushd' and 'popd' to navigate between multiple directories.
+%
+'ctrl + u' deletes the entire line before the cursor in the terminal.
+%
+Use '!!:gs/old/new' to replace 'old' with 'new' in the last executed command.
+%
+Add custom functions to your ~/.bashrc file to automate repetitive tasks.
+%
+Use 'shopt -s autocd' to enable autocd in Bash (automatically changes directory by just typing its name).
+%
+With '$(command)', the output of a command is substituted into another command.
+%
+Use 'nohup' to run a command that persists even after closing the terminal.
+%
+To interrupt a running process in the terminal, press 'Ctrl + c'.
+%
+Press 'Ctrl + z' to suspend a task and use 'fg' to bring it back to the foreground.
+%
+Redirect a command's output to a file with 'command > file.txt'.
+%
+Add '> /dev/null 2>&1' to the end of a command to ignore all output (including errors).
+%
+Use 'watch' to run a command at regular intervals, e.g. 'watch -n 5 df -h'.
+%
+'find . -type f -name "*.txt"' searches for all .txt files in the current directory and subdirectories.
+%
+'grep -r "pattern" .' searches for a pattern in all files in the current directory recursively.
+%
+'less' is more convenient than 'cat' for reading long files, as it allows scrolling.
+%
+Use 'xargs' to pass the output of one command as arguments to another command.
+%
+With 'tee', you can redirect a command's output to a file and display it at the same time in the terminal.
+%
+Use 'df -h' to see available disk space in human-readable sizes.
+%
+'sed' is used to manipulate text strings, e.g. 'sed 's/old/new/g' file.txt'.
+%
+Use 'tr' to transform characters, e.g. 'echo hello | tr a-z A-Z' to convert to uppercase.
+%
+Environment variables are set with 'export VARIABLE="value"' and are available to child processes.
+%
+Use 'diff' to compare the contents of two text files.
+%
+Use 'wget' to download a file from a URL: 'wget http://example.com/file.zip'.
+%
+To compress a file, use 'tar -czvf archive.tar.gz file'.
+%
+With 'kill', you can stop a process using its PID: 'kill -9 PID'.
+%
+Use 'top' to see the most resource-intensive processes in real time.
+%
+'scp' is used to copy files from a remote host: 'scp file user@server:/path'.
+%
+Use 'rsync' to synchronize files between two directories or machines, with many options.
+%
+Add '2>/dev/null' to the end of a command to ignore errors without ignoring standard output.
+%
+Use 'chmod' to change file permissions: 'chmod +x script.sh' to make a file executable.
+%
+The 'chown' command changes the owner of a file: 'chown user file'.
+%
+Use 'man' to access a command's documentation: 'man ls' displays the manual for 'ls'.
+%
+With 'uname -a', you can get detailed information about the operating system.
+%
+To start a script automatically at each new session, add it to your .bashrc or .profile file.
+%
+Use 'cut' to extract specific columns from a text file: 'cut -d "," -f 1,3 file.csv'.
+%
+The 'uniq' command removes repeated lines in a sorted file.
+%
+Use 'sort' to sort a text file by line: 'sort file.txt'.
+%
+With 'paste', you can merge files line by line: 'paste file1.txt file2.txt'.
+%
+To change directory permanently in a Bash script, use 'cd' in a subshell.
+%
+With 'basename', you can extract the filename without its path: 'basename /path/file.txt'.
+%
+Use 'dirname' to get the parent directory of a file: 'dirname /path/file.txt'.
+%
+The 'eval' command allows you to execute a string as a Bash command.
+%
+Add colors to your terminal using ANSI escape sequences.
+%
+uv is a Python package manager, like pip but newer. It can generate an environment from a description file, such as pyproject.toml, which replaces requirements.txt.
+For more info: https://docs.astral.sh/uv/getting-started/
+%
+To install a program with pip for your computer, it's cleaner to use pipx, which doesn't affect the Python version essential to the OS. With pipx, each program runs in its own Python environment.
+
+Use 'history -c' to clear your command history.
+%
+Use '!! | tee output.txt' to save the output of your last command to a file.
+%
+Use 'ps aux | grep process' to find running processes by name.
+%
+Use 'head -n 10 file.txt' to display the first 10 lines of a file.
+%
+Use 'tail -f logfile' to follow new lines added to a log file in real time.
+%
+Use 'uptime' to see how long your system has been running.
+%
+Use 'df -Th' to display disk space usage with filesystem types.
+%
+Use 'du -sh *' to see the size of each item in the current directory.
+%
+Use 'crontab -e' to edit your scheduled tasks (cron jobs).
+%
+Use 'ssh user@host' to connect to a remote machine securely.
+
+Use 'sudo netstat -tnlp | grep <PORT_NUMBER>' to find which process is listening on a specific port. This is useful for troubleshooting network issues or checking which service is using a port.
