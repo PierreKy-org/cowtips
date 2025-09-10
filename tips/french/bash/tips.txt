@@ -128,3 +128,27 @@ Utilisez 'ssh utilisateur@hôte' pour se connecter à une machine distante de fa
 Utilisez 'sudo netstat -tnlp | grep <PORT_NUMBER>' pour savoir quel processus écoute sur un port spécifique. C'est utile pour diagnostiquer des problèmes réseau ou vérifier quel service utilise un port.
 %
 "Go watch Mushoku Tensei" @almounah
+%
+Utilisez 'r' pour rejouer la dernière commande. Vous pouvez aussi utiliser 'r <COMMANDE>' pour rejouer la dernière occurrence d'une commande spécifique, par exemple 'r go' rejouera votre dernière commande 'go build +args'.
+%
+Ajoutez 'set -euo pipefail' en tête de script pour quitter en cas d'erreur, variable non définie ou pipe défaillant (scripts plus sûrs).
+%
+Lancez un script avec 'bash -x script.sh' pour tracer chaque commande exécutée (débogage).
+%
+Utilisez 'trap "cleanup" EXIT' pour garantir l'exécution d'une fonction de nettoyage à la fin (même en cas d'erreur).
+%
+Créez un répertoire temporaire isolé avec 'TMPDIR=$(mktemp -d)' et supprimez-le dans un trap après usage.
+%
+Utilisez la substitution de processus pour comparer des sorties : 'diff <(commande1) <(commande2)'.
+%
+Générez plusieurs répertoires rapidement : 'mkdir -p projet/{src,tests,docs}' (brace expansion).
+%
+Développez des séquences numériques/alphabétiques : 'echo fichier_{1..5}.txt' -> fichier_1.txt ... fichier_5.txt.
+%
+Mesurez le temps d'exécution d'une commande avec 'time <commande>'.
+%
+Comptez les commandes disponibles : 'compgen -c | sort -u | wc -l' (dans le PATH).
+%
+Utilisez 'tldr <commande>' pour des exemples simplifiés (installer le client tldr) en complément de 'man'.
+%
+Analysez vos scripts shell avec 'shellcheck script.sh' pour détecter des erreurs fréquentes (installer ShellCheck).
