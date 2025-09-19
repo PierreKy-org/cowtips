@@ -152,3 +152,11 @@ List all available commands with 'compgen -c | sort -u | wc -l' (counts unique c
 Use 'tldr <command>' for simplified examples (install tldr client first) alongside 'man'.
 %
 Lint shell scripts with 'shellcheck script.sh' to catch common bugs (install ShellCheck).
+%
+'cd' or 'cd ~' takes you to the root of your home directory.
+%
+Use 'systemctl list-units --type=service --state=running' to see all running services.
+%
+Use 'systemctl restart <service_name>' to restart the service.
+%
+To view a service's logs, use 'journalctl -u <service_name> -xe'.

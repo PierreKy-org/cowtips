@@ -152,3 +152,11 @@ Comptez les commandes disponibles : 'compgen -c | sort -u | wc -l' (dans le PATH
 Utilisez 'tldr <commande>' pour des exemples simplifiés (installer le client tldr) en complément de 'man'.
 %
 Analysez vos scripts shell avec 'shellcheck script.sh' pour détecter des erreurs fréquentes (installer ShellCheck).
+%
+'cd' ou 'cd ~' te ramène à la racine de ton répertoire personnel.
+%
+Utilisez 'systemctl list-units --type=service --state=running' pour voir tout les services en cours.
+%
+Utilisez 'systemctl restart <nom du service>' pour redémarrer le service.
+%
+Pour voir les logs d'un service, utilisez 'journalctl -u <nom du service> -xe'.
