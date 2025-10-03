@@ -166,3 +166,5 @@ To know how much space is left on your disks, use 'df -h -a or you can use 'baob
 To know how much space is left on your home directory, use 'df -h /home'
 %
 To know the size of a folder, use 'du -h -s <folder>'
+%
+ifconfig is deprecate, use 'ip a' to manage your network interfaces.
